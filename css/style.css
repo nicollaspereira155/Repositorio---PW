@@ -1,0 +1,379 @@
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    40%{
+        width: 470px;
+    }
+    60%{
+        width: 470px;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #111827;
+}
+
+hr{
+    height: 2px;
+    color: white;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    background-color: #34d3991c;
+    backdrop-filter: saturate(180%) blur(20px);
+    padding: 9px;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 70px;
+}
+
+nav ul li{
+    padding-left: 50px;
+    font-size: 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.966);
+    cursor: pointer;
+    font-family: fantasy;
+}
+
+nav ul li a:hover{
+    color: #34D399;
+    border-bottom: 2px solid #34D399;
+    transition: ease-out 0.4s;
+}
+
+#inicio{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 130px;
+    padding-bottom: 150px;
+}
+
+#inicio h2{
+    color: white;
+    font-size: 60px;
+    padding-left: 20px;
+    font-family: sans-serif;
+}
+
+#inicio p{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#inicio .msg{
+    color: #34D399;
+    font-size: 70px;
+    padding-left: 20px;
+    font-family: fantasy;
+    font-weight: normal;
+    border-right: 4px solid #34D399;
+    width: 470px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: blink 0.5s infinite,
+                typing 5s infinite steps(25);
+}
+
+#inicio .contato img{
+    border: 4px solid #34D399;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    margin-right: 10px;
+    padding: 7px;
+}
+
+#inicio .contato{
+    padding-left: 60px;
+    padding-right: 200px;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+#sobre h1{
+    font-size: 90px;
+    color: white;
+    font-family: fantasy;
+    font-weight: normal;
+    margin: 0 250px;
+}
+
+#sobre h2{
+    font-size: 60px;
+    font-family: fantasy;
+    font-weight: lighter;
+    color: #34D399;
+    margin: 0 250px;
+}
+
+#sobre p{
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+    margin: 50px 250px;
+}
+
+#projetos{
+    padding-top: 90px;
+    margin-bottom: 90px;
+}
+
+#projetos h1{
+    font-size: 90px;
+    color: white;
+    font-family: fantasy;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+#projetos span{
+    color: #34D399;
+}
+
+#projetos a{
+    text-decoration: none;
+    color: #111827;
+}
+
+#projetos .cardgrupo{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#projetos .card{
+    width: 225px;
+    height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#projetos .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#projetos .card .layer{
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#projetos .card .info{
+    position: absolute;
+    bottom: -50%;
+    padding: 15px;
+    opacity: 0;
+    transition: 0.5s bottom, 1.75s opacity;
+    color: #34D399;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+#projetos .info p{
+    font-size: 14px;
+    margin-top: 3px;
+    color: white;
+    font-weight: lighter;
+}
+
+#projetos .info button{
+    background-color: #34D399;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+#projetos .card:hover, 
+.card:hover img,
+.card:hover .layer{
+    transform: scale(1.1);
+}
+
+#projetos .card:hover > .layer{
+    opacity: 1;
+}
+
+#projetos .card:hover > .info{
+    bottom: 0;
+    opacity: 1;
+}
+
+#projetos .cardgrupo:hover > .card:not(:hover){
+    filter: blur(5px);
+}
+
+#contato h2{
+    font-size: 90px;
+    color: white;
+    font-family: fantasy;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+    padding-top: 90px;
+}
+
+#contato span{
+    color: #34D399;
+}
+
+#contato .contatos{
+    display: flex;
+    justify-content: center;
+}
+
+#contato .gruponome{
+    position: relative;
+}
+
+#contato label{
+    color: #34D399;
+    padding: 0 6px;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 4em;
+    pointer-events: none;
+    transition: .3s;
+    font-size: 25px;
+    font-family: fantasy;
+    font-weight: lighter;
+}
+
+#contato input{
+    color: white;
+    border: 3px solid white;
+    background: transparent;
+    border-radius: 7px;
+    width: 400px;
+    height: 70px;
+    padding: 0 1rem;
+    outline: none;
+    margin: 50px 70px;
+    font-size: 23px;
+    box-shadow: inset 0 7px 20px black;
+}
+
+#contato input:focus~label,
+#contato input:valid~label,
+#contato input:not(:placeholder-shown)~label {
+    top: 29%;
+    background-color: #111827;
+    font-size: 1.5rem;
+    left: 15%;
+}
+
+#contato .btn{
+    display: flex;
+    justify-content: center;
+}
+
+#contato .btn button{
+    border: none;
+    margin: 50px 0;
+    padding: 10px 17px;
+    font-size: 30px;
+    background-color: #34D399;
+    color: #111827;
+    border: 2px solid white;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+#contato .pop-msg dialog{
+    margin: auto;
+}
+
+dialog{
+    width: 549px;
+    height: 230px;
+    border: 4px solid #111827;
+    box-shadow: inset 0 0 10px black;
+}
+
+dialog h4{
+    padding-top: 20px;
+    color: #111827;
+    font-family: sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+dialog p{
+    padding: 15px 15px;
+    font-size: 20px;
+    color: #111827;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#contato .pop-msg dialog button{
+    border: none;
+    margin-left: 200px;
+    padding: 10px 17px;
+    font-size: 30px;
+    background-color: #34D399;
+    color: #111827;
+    border: 2px solid #111827;
+    border-radius: 999px;
+    font-family: sans-serif;
+    cursor: pointer;
+}

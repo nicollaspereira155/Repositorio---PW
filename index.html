@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositório - Nicollas Pereira</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#inicio">INÍCIO</a></li>
+            <li><a href="#sobre">SOBRE</a></li>
+            <li><a href="#projetos">PROJETOS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+        </ul>
+    </nav>
+    <section id="inicio">
+        <h2>Olá!</h2>
+        <p>Seja bem-vindo(a) ao meu repositório, meu nome é</p>
+        <div class="msg">Nicollas Pereira</div>
+        <p>Conheça mais sobre mim e meus projetos!</p>
+        <div class="contato">
+            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="./img/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com.br"target="_blank"><img src="./img/instagram.png" alt="instagram"></a>
+            <a href="https://web.whatsapp.com/"target="_blank"><img src="./img/telefone.png" alt="whatsapp"></a>
+            <a href="https://www.google.com/gmail/about/signup_complete.html" target="_blank"><img src="./img/email.png" alt="gmail"></a>
+        </div>
+    </section>
+    <hr>
+    <section id="sobre">
+        <h1>Sobre mim</h1>
+        <h2>Estudante de Programação</h2>
+        <p>Olá, meu nome é Nicollas e tenho 15 anos e estou cursando meu primeiro ano no curso de Desenvolvimento de Sistemas integrado ao ensino médio na Etec Cidade Tiradentes. Estou encerrando meus estudos na Fisk e adquirindo a proeficiência no idioma inglês. Sou uma pessoa ambiciosa e com muitos objetivos, estou começando a adquirir experiência na área da programação e já realizei alguns projetos em grupo. Meu objetivo é me tornar um desenvolvedor full-stack, porém também tenho o desejo de me especializar em outras linguagens de programação.</p>
+    </section>
+    <hr>
+    <section id="projetos">
+        <h1>Meus &nbsp;<span> Projetos</span></h1>
+        <div class="cardgrupo">
+            <div class="card">
+                <img src="./img/viagens.png" alt="">
+                <div class="layer"></div>
+                <div class="info">
+                    <h3>Projeto Viagens</h3>
+                    <p>Confira este site para conhecer e se informar sobre os melhores países na Europa para se visitar!</p>
+                    <button><a href="">Ver Mais &rarr;</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/IMG-20260622-WA0085.jpg" alt="">
+                <div class="layer"></div>
+                <div class="info">
+                    <h3>Projeto Playlist</h3>
+                    <p>Confira esse site para ouvir as melhores músicas de Bruno Mars, Lady Gaga e The Weeknd!</p>
+                    <button><a href="https://github.com/MarcioMoJr/Projeto-Playlist.git">Ver Mais &rarr;</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/Currículo.png" alt="">
+                <div class="layer"></div>
+                <div class="info">
+                    <h3>Meu Currículo</h3>
+                    <p>Acesse esse site para conhecer mais sobre mim e minhas habilidades!</p>
+                    <button><a href="https://github.com/nicollaspereira155/Projeto-Curr-culo---PW.git">Ver Mais &rarr;</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/carros.jpg" alt="">
+                <div class="layer"></div>
+                <div class="info">
+                    <h3>Projeto Carros</h3>
+                    <p>Confira este site para conhecer e se aprofundar sobre os 5 melhores carros antigos!</p>
+                    <button><a href="">Ver Mais &rarr;</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="contato">
+        <h2>Nos&nbsp;<span>Contate!</span></h2>
+        <div class="contatos">
+            <div class="grupo1">
+                <div class="gruponome">
+                    <input required type="text" id="nome" placeholder=" ">
+                    <label for="nome">Nome Completo</label>
+                </div>
+                <div class="gruponome">
+                    <input required type="tel" id="tel" placeholder=" ">
+                    <label for="tel">Telefone</label>
+                </div>
+            </div>
+            <div class="grupo2">
+                <div class="gruponome">
+                    <input required type="email" id="email" placeholder=" ">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="gruponome">
+                    <input required type="text" id="desc" placeholder=" ">
+                    <label for="desc">Descrição do projeto</label>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button onclick="popup.showModal()">Enviar Mensagem &nbsp;&rarr;</button>
+        </div>
+        <div class="pop-msg">
+            <dialog id="popup">
+                <h4>Solicitação de projeto enviada!</h4>
+                <p>Aguarde enquanto avaliamos seus dados e a breve descrição do seu projeto. Manteremos contato com você para detalhes contratuais e para marcar reuniões.</p>
+                <button onclick="popup.close()">Fechar</button>
+            </dialog>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
