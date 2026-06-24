@@ -119,6 +119,11 @@ nav ul li a:hover{
     padding: 7px;
 }
 
+#inicio .contato img:hover{
+    transform: scale(1.2);
+    transition: ease-in-out 0.2s;
+}
+
 #inicio .contato{
     padding-left: 60px;
     padding-right: 200px;
@@ -336,6 +341,12 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
+#contato button:hover{
+    background-color: #218862;
+    color: #111827;
+    transition: ease-in-out 0.1s;
+}
+
 #contato .pop-msg dialog{
     margin: auto;
 }
@@ -376,4 +387,10 @@ dialog p{
     border-radius: 999px;
     font-family: sans-serif;
     cursor: pointer;
+}
+
+#contato .pop-msg dialog button:hover{
+    background-color: #218862;
+    color: #111827;
+    transition: ease-in-out 0.1s;
 }
