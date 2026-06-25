@@ -48,6 +48,11 @@ nav{
     width: 100%;
 }
 
+nav a.active{
+    color: #34D399;
+    border-bottom: 2px solid #34D399;
+}
+
 nav ul{
     display: flex;
     justify-content: center;
@@ -393,4 +398,13 @@ dialog p{
     background-color: #218862;
     color: #111827;
     transition: ease-in-out 0.1s;
+}
+
+footer{
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
 }
