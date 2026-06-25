@@ -1,5 +1,149 @@
 @media (min-width: 320px){
-    
+    hr{
+        height: 0.03rem;
+        display: flex;
+        justify-content: center;
+    }
+    nav{
+        padding: 0.17rem;
+    }
+    nav a.active{
+        border-bottom: 0.057rem solid #34D399;
+    }
+    nav ul{
+        padding: 0.18rem 1.34rem;
+    }
+    nav ul li{
+        padding-left: 0.975rem;
+        font-size: 0.6rem;
+    }
+    nav ul li a:hover{
+        border-bottom: 0.057rem solid #34D399;
+    }
+    #inicio{
+        padding-left: 1.95rem;
+        padding-top: 2.55rem;
+        padding-bottom: 2.93rem;
+    }
+    #inicio h2{
+        font-size: 1.17rem;
+        padding-left: 0.39rem;
+    }
+    #inicio p{
+        font-size: 0.78rem;
+        padding: 0.39rem;
+    }
+    #inicio .msg{
+        font-size: 1.72rem;
+        padding-left: 0.39rem;
+        border-right: 0.078rem solid #34D399;
+        width: 9.17rem;
+    }
+    #inicio .contato img{
+        border: 0.078rem solid #34D399;
+        height: 1.17rem;
+        width: 1.17rem;
+        margin-right: 0.19rem;
+        padding: 0.11rem;
+    }
+    #inicio .contato{
+        padding-left: 1.17rem;
+        padding-right: 3.9rem;
+    }
+    #sobre{
+        padding-top: 1.75rem;
+    }
+    #sobre h1{
+        font-size: 1.75rem;
+        margin: 0 4.87rem;
+    }
+    #sobre h2{
+        font-size: 1.17rem;
+        margin: 0 4.87rem;
+    }
+    #sobre p{
+        font-size: 0.56rem;
+        margin: 0.97rem 4.87rem;
+    }
+    #projetos{
+        padding-top: 1.75rem;
+        margin-bottom: 1.75rem;
+    }
+    #projetos h1{
+        font-size: 1.75rem;
+        margin-bottom: 1.75rem;
+    }
+    #projetos .cardgrupo{
+        gap: 0.49rem;
+    }
+    #projetos .card{
+        width: 4.3rem;
+        height: 7.8rem;
+    }
+    #projetos .card .info{
+        padding: 0.3rem;
+    }
+    #projetos .card .info p{
+        font-size: 0.25rem;
+        margin-top: 0.06rem;
+    }
+    #projetos .card .info button{
+        padding: 0.156rem 0.234rem;
+        border-radius: 0.19rem;
+        margin-top: 0.19rem;
+    }
+    #contato h2{
+        font-size: 1.75rem;
+        margin-bottom: 1.75rem;
+        padding-top: 1.75rem;
+    }
+    #contato label{
+        padding: 0 0.11rem;
+        left: 1.9rem;
+        font-size: 0.48rem;
+    }
+    #contato input{
+        width: 7.8rem;
+        height: 1.36rem;
+        padding: 0 0.312rem;
+        margin: 0.97rem 1.36rem;
+        font-size: 0.449rem;
+    }
+    #contato input:focus~label,
+    #contato input:valid~label,
+    #contato input:not(:placeholder-shown)~label{
+        font-size: 0.468rem;
+    }
+    #contato .btn button{
+        margin: 0.97rem 0;
+        padding: 0.19rem 0.33rem;
+        font-size: 0.56rem;
+    }
+    dialog{
+        width: 10.72rem;
+        height: 4.49rem;
+    }
+    dialog h4{
+        padding: 0.39rem;
+        font-size: 0.585rem;
+    }
+    dialog p{
+        padding: 0.28rem 0.28rem;
+        font-size: 0.39rem;
+    }
+    #contato .pop-msg dialog button{
+        margin-left: 3.9rem;
+        padding: 0.19rem 0.33rem;
+        font-size: 0.58rem;
+    }
+    footer{
+        padding: 0.39rem;
+        font-size: 0.371rem;
+    }
+    #btn-voltar{
+        padding: 0.156rem 0.39rem;
+        font-size: 0.585rem;
+    }
 }
 @media (min-width: 768px){
     hr{
@@ -9,14 +153,14 @@
         padding: 0.42rem;
     }
     nav a.active{
-        border-bottom: 0.138rem;
+        border-bottom: 0.138rem solid #34D399;
     }
     nav ul li{
         padding-left: 2.4rem;
         font-size: 1.07rem;
     }
     nav ul li a:hover{
-        border-bottom: 0.13rem;
+        border-bottom: 0.13rem solid #34D399;
     }
     #inicio{
         padding-left: 4.65rem;
@@ -34,7 +178,7 @@
     #inicio .msg{
         font-size: 3.2rem;
         padding-left: 0.9rem;
-        border-right: 0.09rem;
+        border-right: 0.18rem solid #34D399;
         width: 22rem;
     }
     #inicio .contato img{
@@ -151,14 +295,14 @@
         padding: 0.56rem;
     }
     nav a.active{
-        border-bottom: 0.185rem;
+        border-bottom: 0.185rem solid #34D399;
     }
     nav ul li{
         padding-left: 3.12rem;
         font-size: 1.4375rem;
     }
     nav ul li a:hover{
-        border-bottom: 0.185rem;
+        border-bottom: 0.185rem solid #34D399;
     }
     #inicio{
         padding-left: 6.2rem;
@@ -176,6 +320,7 @@
     #inicio .msg{
         font-size: 4.375rem;
         padding-left: 1.25rem;
+        border-right: 0.25rem solid #34D399;
         width: 29.375rem;
     }
     #inicio .contato img{
