@@ -30,4 +30,13 @@ sections.forEach((section) => {
 
 // botão voltar ao topo
 
+const voltarBtn = document.querySelector("#btn-voltar");
 
+voltarBtn.onclick = () =>
+    document.documentElement.scroll({
+        top: 0,
+        behavior: "smooth"
+    });
+    window.onscroll = () => {
+        voltarBtn.hidden = !(document.documentElement.scrollTop > 200)
+}

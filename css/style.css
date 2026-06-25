@@ -1,3 +1,7 @@
+
+/* keyframes */
+
+
 @keyframes typing{
     0%{
         width: 0;
@@ -19,6 +23,8 @@
     }
 }
 
+/* tags basicas */
+
 *{
     padding: 0;
     margin: 0;
@@ -37,6 +43,8 @@ hr{
     color: white;
     background-color: white;
 }
+
+/* navbar */
 
 nav{
     display: flex;
@@ -78,6 +86,8 @@ nav ul li a:hover{
     border-bottom: 2px solid #34D399;
     transition: ease-out 0.4s;
 }
+
+/* seção inicio */
 
 #inicio{
     display: flex;
@@ -135,6 +145,8 @@ nav ul li a:hover{
     padding-right: 200px;
 }
 
+/* seção sobre */
+
 #sobre{
     display: flex;
     flex-direction: column;
@@ -164,6 +176,8 @@ nav ul li a:hover{
     font-family: sans-serif;
     margin: 50px 250px;
 }
+
+/* seção projetos */
 
 #projetos{
     padding-top: 90px;
@@ -269,6 +283,8 @@ nav ul li a:hover{
     filter: blur(5px);
 }
 
+/* seção contato */
+
 #contato h2{
     font-size: 90px;
     color: white;
@@ -357,6 +373,8 @@ nav ul li a:hover{
     margin: auto;
 }
 
+/* popup de mensagem */
+
 dialog{
     width: 549px;
     height: 230px;
@@ -401,6 +419,8 @@ dialog p{
     transition: ease-in-out 0.1s;
 }
 
+/* footer */
+
 footer{
     color: white;
     font-family: sans-serif;
@@ -408,4 +428,25 @@ footer{
     padding: 20px;
     font-size: 20px;
     font-weight: 400;
+}
+
+/* botão voltar ao topo */
+
+#btn-voltar{
+    position: fixed;
+    bottom: 2.7rem;
+    right: 2.7rem;
+    background-color: #34D399;
+    color: #111827;
+    border: 2px solid white;
+    padding: 0.5rem 1.2rem;
+    font-size: 30px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+#btn-voltar:hover{
+    background-color: #218862;
+    color: #111827;
+    transition: ease-in-out 0.1s;
 }
