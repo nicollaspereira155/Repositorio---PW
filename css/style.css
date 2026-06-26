@@ -7,10 +7,40 @@
         width: 0;
     }
     40%{
-        width: 470px;
+        width: 29.37rem;
     }
     60%{
-        width: 470px;
+        width: 29.37rem;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes typing2{
+    0%{
+        width: 0;
+    }
+    40%{
+        width: 22.03rem;
+    }
+    60%{
+        width: 22.03rem;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes typing3{
+    0%{
+        width: 0;
+    }
+    40%{
+        width: 16.5rem;
+    }
+    60%{
+        width: 16.5rem;
     }
     100%{
         width: 0;
@@ -119,7 +149,7 @@ nav ul li a:hover{
     font-family: fantasy;
     font-weight: normal;
     border-right: 0.25rem solid #34D399;
-    width: 29.375rem;
+    width: 29.4rem;
     overflow: hidden;
     white-space: nowrap;
     animation: blink 0.5s infinite,

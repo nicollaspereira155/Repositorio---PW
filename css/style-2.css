@@ -5,50 +5,56 @@
         justify-content: center;
     }
     nav{
-        padding: 0.17rem;
+        padding: 0.4rem;
+        justify-content: space-between;
+        width: 100%;
     }
     nav a.active{
         border-bottom: 0.057rem solid #34D399;
     }
     nav ul{
-        padding: 0.18rem 1.34rem;
+        padding: 0.17rem;
     }
     nav ul li{
-        padding-left: 0.975rem;
-        font-size: 0.6rem;
+        padding: 0.3rem 1rem;
+        font-size: 1.4rem;
     }
     nav ul li a:hover{
         border-bottom: 0.057rem solid #34D399;
     }
     #inicio{
         padding-left: 1.95rem;
-        padding-top: 2.55rem;
+        padding-top: 10rem;
         padding-bottom: 2.93rem;
     }
     #inicio h2{
-        font-size: 1.17rem;
+        font-size: 2.5rem;
         padding-left: 0.39rem;
     }
     #inicio p{
-        font-size: 0.78rem;
+        font-size: 1.5rem;
         padding: 0.39rem;
     }
     #inicio .msg{
-        font-size: 1.72rem;
+        font-size: 2.5rem;
         padding-left: 0.39rem;
-        border-right: 0.078rem solid #34D399;
-        width: 9.17rem;
+        border-right: 0.4rem solid #34D399;
+        width: 2rem;
+        padding-right: 0.39rem;
+        animation: blink 0.5s infinite,
+                    typing3 5s infinite steps(25);
     }
     #inicio .contato img{
-        border: 0.078rem solid #34D399;
-        height: 1.17rem;
-        width: 1.17rem;
-        margin-right: 0.19rem;
-        padding: 0.11rem;
+        border: 0.2rem solid #34D399;
+        height: 2rem;
+        width: 2rem;
+        margin-right: 0.5rem;
+        padding: 0.4rem;
+        margin-top: 2rem;
     }
     #inicio .contato{
-        padding-left: 1.17rem;
-        padding-right: 3.9rem;
+        padding-left: 0;
+        display: flex;
     }
     #sobre{
         padding-top: 1.75rem;
@@ -180,6 +186,7 @@
         padding-left: 0.9rem;
         border-right: 0.18rem solid #34D399;
         width: 22rem;
+        animation: typing2 5s infinite;
     }
     #inicio .contato img{
         height: 2.5rem;
@@ -321,7 +328,7 @@
         font-size: 4.375rem;
         padding-left: 1.25rem;
         border-right: 0.25rem solid #34D399;
-        width: 29.375rem;
+        width: 29.4rem;
     }
     #inicio .contato img{
         height: 3.125rem;
