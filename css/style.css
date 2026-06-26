@@ -67,7 +67,7 @@ nav ul{
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding: 0.6rem 4.3rem;
+    padding: 0.9rem 4.3rem;
 }
 
 nav ul li{
@@ -127,7 +127,7 @@ nav ul li a:hover{
 }
 
 #inicio .contato img{
-    border: 0.25rem solid #34D399;
+    border: 30px solid #34D399;
     border-radius: 50%;
     height: 3.125rem;
     width: 3.125rem;
@@ -137,7 +137,7 @@ nav ul li a:hover{
 }
 
 #inicio .contato img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: ease-in-out 0.2s;
 }
 
@@ -327,7 +327,7 @@ nav ul li a:hover{
 #contato input{
     color: white;
     border: 3px solid white;
-    background: transparent;
+    background: #111827;
     border-radius: 7px;
     width: 25rem;
     height: 4.375rem;

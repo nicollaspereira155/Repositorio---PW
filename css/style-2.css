@@ -292,7 +292,7 @@
         height: 0.12rem;
     }
     nav{
-        padding: 0.56rem;
+        padding: 0.9rem;
     }
     nav a.active{
         border-bottom: 0.185rem solid #34D399;
@@ -328,6 +328,7 @@
         width: 3.125rem;
         margin-right: 0.625rem;
         padding: 0.4375rem;
+        border: 3px solid #34D399;
     }
     #inicio .contato{
         padding-left: 3.75rem;
@@ -404,8 +405,8 @@
         font-size: 1.85rem;
     }
     dialog{
-        width: 34.31rem;
-        height: 14.375rem;
+        width: 34.9rem;
+        height: 15rem;
     }
     dialog h4{
         padding: 1.25rem;
